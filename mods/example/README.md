@@ -1,4 +1,4 @@
-Items act like booleans; variables act like integers. 
+Items act like booleans, but are capable of applying effects while owned; variables act like integers. 
 
 # Files
 ## mod_info.json
