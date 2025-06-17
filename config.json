@@ -1,0 +1,52 @@
+{
+  "variables": [
+    {
+      "id": "gold",
+      "name": "Gold",
+      "name_plural": "Gold",
+      "base_capacity": -1
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "name_plural": "Silver",
+      "base_capacity": 100
+    }
+  ],
+  "shop": [
+    {
+      "id": "shop:upgrade:miner:0",
+      "name": "Base Miner",
+      "cost": {},
+      "effects": { 
+        "perTick": [
+          "{gold}+1",
+          "{silver}+1"
+        ]
+       },
+      "requires": []
+    },
+    {
+      "id": "shop:upgrade:miner:gold:0",
+      "name": "Gold Miner",
+      "cost": { "silver": 20 },
+      "effects": {
+        "perTick": [
+          "{gold}+5"
+        ]
+      },
+      "requires": ["miner_0"]
+    },
+    {
+      "id": "shop:upgrade:miner:silver:0",
+      "name": "Silver Miner",
+      "cost": { "gold": 20 },
+      "effects": { 
+        "perTick": [
+          "{silver}+5"
+        ]
+      },
+      "requires": ["miner_0"]
+    }
+  ]
+}

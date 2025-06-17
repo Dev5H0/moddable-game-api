@@ -1,0 +1,15 @@
+{
+    "author": {
+        "username": "5H0",
+        "name": "Þórhallur Óskar",
+        "links": [
+            "https://github.com/Dev5H0"
+        ]
+    },
+    "mod": {
+        "id": "thorhalluro:gem_mod",
+        "title": "Gem Mod",
+        "description": "Mod that adds gem variables.",
+        "dependencies": []
+    }
+}

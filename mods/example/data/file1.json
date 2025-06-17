@@ -1,0 +1,79 @@
+{
+    "variables": [
+        {
+            "id": "variable:health:max",
+            "name": "Health",
+            "name_plural": "Health",
+            "capacity": -1,
+            "value": 100
+        },
+        {
+            "id": "variable:health:now",
+            "name": "Health",
+            "name_plural": "Health",
+            "capacity": "$:variable:health:max",
+            "value": 100
+        }
+    ],
+    "encounters": [
+        {
+            "id": "encounter:health:increase:percent:20:potion",
+            "description": "You find a {%random_colour} potion and drink it.",
+            "rarity": 800,
+            "effects": [
+                "@:reusable_data:formula:0"
+            ]
+        },
+        {
+            "id": "encounter:health:increase:percent:20:healer:0",
+            "description": "You meet a healer; will you pay them 50 gold to heal?",
+            "rarity": 2000,
+            "options": [
+                {
+                    "option": "yes",
+                    "description": "You pay the healer 50 gold. ",
+                    "effects": [
+                        "{gold}-50",
+                        "@:reusable_data:formula:0"
+                    ]
+                },
+                {
+                    "options": "no",
+                    "effects": [
+                        "$:encounter:health:increase:percent:20:healer:no"
+                    ]
+                }
+            ],
+            "effects": [
+                "@:reusable_data:formula:0"
+            ]
+        },
+        {
+            "id": "encounter:health:increase:percent:20:healer:no",
+            "description": "You refuse to pay the healer, and continue on your journey. ",
+            "options": [],
+            "effects": []
+        }
+    ],
+    "@": [
+        {
+            "id": "reusable_data",
+            "data": [
+                {
+                    "id": "formula:0",
+                    "value": "{$:variable:health:now}+(20%{$:variable:health:max})"
+                }
+            ]
+        }
+    ],
+    "%": [
+        {
+            "id": "random_colour",
+            "data": [
+                "red",
+                "green",
+                "blue"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "author": {
+        "username": "5H0",
+        "name": "Þórhallur Óskar",
+        "links": [
+            "https://github.com/Dev5H0"
+        ]
+    },
+    "mod": {
+        "id": "thorhalluro:encounter_mod",
+        "title": "Encounter Mod",
+        "description": "Mod that adds encounter.",
+        "dependencies": [
+            "thorhalluro:gem_mod"
+        ]
+    }
+}

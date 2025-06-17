@@ -1,0 +1,73 @@
+{
+    "encounters": [
+        {
+            "id": "$:encounter:large_treasure_chest:0",
+            "description": "You find a large treasure chest.",
+            "rarity": "10000",
+            "requires": [
+                {
+                    "type": "item",
+                    "data": "$:item:excalibur"
+                }
+            ],
+            "effects": [
+                {
+                    "type": "formula_call",
+                    "action": "$:formula:large_treasure:0:0"
+                },
+                {
+                    "type": "formula_call",
+                    "action": "$:formula:large_treasure:0:1"
+                },
+                {
+                    "type": "formula_call",
+                    "action": "$:formula:large_treasure:0:2"
+                }
+            ]
+        },
+        {
+            "id": "thorhalluro:encounter_mod:encounter:large_treasure_chest:1",
+            "description": "You find a large treasure chest.",
+            "rarity": "10000",
+            "effects": [
+                {
+                    "type": "formula",
+                    "timeout": -1,
+                    "value": "{gold}+(140~700)"
+                },
+                {
+                    "type": "formula",
+                    "timeout": -1,
+                    "value": "{silver}+(600~3000)"
+                },
+                {
+                    "type": "formula",
+                    "timeout": -1,
+                    "value": "{thorhalluro:gem_mod:variable:sapphire}+(2~12)"
+                }
+            ]
+        }
+    ],
+    "@": [
+        {
+            "id": "formula",
+            "data": [
+                {
+                    "id": "large_treasure:0:0",
+                    "type": "formula",
+                    "formula": "{gold}+(80~300)"
+                },
+                {
+                    "id": "large_treasure:0:1",
+                    "formula": "{silver}+(250~7000)"
+                },
+                {
+                    "id": "large_treasure:0:2",
+                    "formula": "{$:variable:sapphire}+(4~6)"
+                }
+            ]
+        }
+    ],
+    "$formulas": [
+    ]
+}

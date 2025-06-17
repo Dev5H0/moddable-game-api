@@ -1,0 +1,15 @@
+{
+    "author": {
+        "username": "example_author",
+        "name": "Example Name",
+        "links": [
+            "https://example.com/"
+        ]
+    },
+    "mod": {
+        "id": "username:example_mod",
+        "title": "Example Mod",
+        "description": "An example mod. ",
+        "dependencies": []
+    }
+}

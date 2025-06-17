@@ -1,0 +1,28 @@
+{
+    "variables": [
+        {
+            "id": "$:variable:ruby",
+            "name": "Ruby",
+            "name_plural": "Rubies",
+            "base_capacity": -1
+        },
+        {
+            "id": "$:variable:sapphire",
+            "name": "Sapphire",
+            "name_plural": "Sapphires",
+            "base_capacity": -1
+        },
+        {
+            "id": "$:variable:emerald",
+            "name": "Emerald",
+            "name_plural": "Emeralds",
+            "base_capacity": -1
+        },
+        {
+            "id": "$:variable:diamond",
+            "name": "Diamond",
+            "name_plural": "Diamonds",
+            "base_capacity": -1
+        }
+    ]
+}
