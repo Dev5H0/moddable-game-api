@@ -38,7 +38,7 @@ The idea is to make a game api that can be used locally with any frontend, and c
     - `POST /toggle?id=example_mod` # Toggle a mod on or off. 
 
 ## Mods
-Mods are a key feature, allowing you to fully customise the game to your will, from idle games to random, or even a little bit of both. 
+Mods are a key feature, allowing you to fully customise the game to your will, from idle games to RPGs, or even a little bit of both. 
 
 Define a variable, an item, and encounters; make the defined item purchasable in the shop for a set amount of your defined variable, unlocking the defined encounters when bought. 
 
