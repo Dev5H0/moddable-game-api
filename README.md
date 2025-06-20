@@ -2,7 +2,7 @@
 The idea is to make a game api that can be used locally with any frontend, and can be modded entirely through json.
 
 ## A basic explanation
-- The game is played using encounters. 
+- The game is split into mpas, regions, zones, & encounters. 
 - Encounters can modify variables through formulas and give items. 
 - Encounters can be locked until you have an item, or have enough of a variable
 
